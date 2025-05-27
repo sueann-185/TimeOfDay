@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Page Title -->
+    <title>Time of Day</title>
+
+    <!-- Viewport settings for responsive design on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Built in style -->
+    <style>
+        body {
+            transition: background-color 1s ease;
+            margin: 0;
+            padding: 100px;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        .color-display {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .color-sample {
+            width: 50px;
+            height: 25px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 1rem;
+        }
+        table {
+            width: 100%;
+            margin-top: 15px;
+        }
+        td {
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Welcome to my dynamic webpage!</h2>
+
+        <br />
+
+        <!-- Student Information Section -->
+        <h3>Student</h3>
+        <p><strong>Name:</strong> Peiyao Xiao</p>
+        <p><strong>Course Name:</strong> COP4813-0003</p>
+        <p><strong>Major:</strong> PC</p>
+        
+        <br />
+
+        <!-- Time display section -->
+        <p>Current time: <span id="time">--:--:--</span></p>
+
+        <!-- Color display section -->
+        <p>
+            <span class="color-display">
+                <span>Current color:</span>
+                <span class="color-sample" id="currentColor"></span>
+                <span id="color">#FFFFFF</span>
+            </span>
+        </p>
+
+        <hr>
+
+        <!-- Color reference table -->
+        <h3>Color Reference</h3>
+        <table>
+            <tr>
+                <td>Morning (6am-12pm)</td>
+                <td><div class="color-sample" style="background: #88CCCC"></div></td>
+                <td>#88CCCC</td>
+            </tr>
+            <tr>
+                <td>Afternoon (12pm-6pm)</td>
+                <td><div class="color-sample" style="background: #DDDD33"></div></td>
+                <td>#DDDD33</td>
+            </tr>
+            <tr>
+                <td>Evening (6pm-9pm)</td>
+                <td><div class="color-sample" style="background: #33CC66"></div></td>
+                <td>#33CC66</td>
+            </tr>
+            <tr>
+                <td>Night (9pm-6am)</td>
+                <td><div class="color-sample" style="background: #113333"></div></td>
+                <td>#113333</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- External JavaScript file reference -->
+    <script src="main.js"></script>
+</body>
+</html>
